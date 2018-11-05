@@ -10,7 +10,6 @@ ENV TZ=Asia/Shanghai PORT=999 VER=3.5.8
 
 RUN \
 	echo "**** install packages ****" \
-	&& sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories \
 	&& apk add --no-cache curl unzip \
 	&& cd /tmp \
 	&& curl -fSL http://qiniu.zoranjojo.top/BaiduPCS-Go-${VER}-linux-amd64.zip -o baidupcs.zip \
