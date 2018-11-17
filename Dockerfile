@@ -6,7 +6,7 @@ ARG VERSION
 LABEL build_version="blog.auska.win version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="Auska"
 
-ENV TZ=Asia/Shanghai PORT=999 VER=3.5.8
+ENV TZ=Asia/Shanghai PORT=999 VER=3.5.9
 
 RUN \
 	echo "**** install packages ****" \
