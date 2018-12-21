@@ -6,13 +6,13 @@ ARG VERSION
 LABEL build_version="blog.auska.win version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="Auska"
 
-ENV TZ=Asia/Shanghai PORT=999 VER=3.5.9
+ENV TZ=Asia/Shanghai PORT=999 VER=3.6.1
 
 RUN \
 	echo "**** install packages ****" \
 	&& apk add --no-cache curl unzip \
 	&& cd /tmp \
-	&& curl -fSL http://qiniu.zoranjojo.top/BaiduPCS-Go-${VER}-linux-amd64.zip -o baidupcs.zip \
+	&& curl -fSL https://github.com/liuzhuoling2011/baidupcs-web/releases/download/${VER}/BaiduPCS-Go-${VER}-linux-amd64.zip -o baidupcs.zip \
 	&& mkdir -p /defaults \
 	&& unzip baidupcs.zip -d /defaults \
 	&& mv /defaults/BaiduPCS-Go-${VER}-linux-amd64/BaiduPCS-Go /defaults/BaiduPCS-Go \
