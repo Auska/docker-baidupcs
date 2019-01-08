@@ -8,9 +8,10 @@ docker create --name=baidupcs \
 -v <path to downloads>:/mnt \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
--p 999:999 \
+-p 1999:1999 \  #需要使用高位端口(>1024)
 auska/docker-baidupcs
 ```
+
 
 ### User / Group Identifiers
 
