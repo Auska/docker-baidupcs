@@ -8,9 +8,11 @@ docker create --name=baidupcs \
 -v <path to downloads>:/mnt \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
--p 999:999 \
+-e PORT=1999 \  #(port should be greater than 1024)
+-p 1999:1999 \  
 auska/docker-baidupcs
 ```
+
 
 ### User / Group Identifiers
 
@@ -29,3 +31,8 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 + **3.5.8:** Update 3.5.8.
 + **3.5.9:** Update 3.5.9.
 + **3.6.1:** Update 3.6.1.
+
+## Refferences
+https://github.com/liuzhuoling2011/baidupcs-web
+
+https://github.com/iikira/BaiduPCS-Go
