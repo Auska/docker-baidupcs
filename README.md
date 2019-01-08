@@ -8,7 +8,7 @@ docker create --name=baidupcs \
 -v <path to downloads>:/mnt \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
--p 1999:1999 \  #需要使用高位端口(>1024)
+-p 1999:1999 \  #(port should be greater than 1024)
 auska/docker-baidupcs
 ```
 
