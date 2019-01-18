@@ -25,4 +25,4 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 1999
-VOLUME /mnt
+VOLUME /root/Downloads /defaults

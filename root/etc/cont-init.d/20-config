@@ -5,4 +5,4 @@ mkdir -p /defaults /mnt
 # permissions
 chown abc:abc -R \
 	/defaults \
-	/mnt
+	/root/Downloads

@@ -5,7 +5,8 @@ http://blog.auska.win
 
 ```
 docker create --name=baidupcs \
--v <path to downloads>:/mnt \
+-v <path to downloads>:/root/Downloads \
+-v <path to config>:/defaults \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
 -e PORT=1999 \  #(port should be greater than 1024)
