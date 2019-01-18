@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-mkdir -p /defaults /mnt
+mkdir -p /defaults /root/Downloads
 
 # permissions
 chown abc:abc -R \
