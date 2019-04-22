@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-	s6-setuidgid abc /defaults/BaiduPCS-Go web --port $PORT
+	s6-setuidgid abc /defaults/BaiduPCS-Go web --access --port $PORT
