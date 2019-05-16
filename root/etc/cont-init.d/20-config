@@ -6,3 +6,4 @@ mkdir -p /defaults /root/Downloads
 chown abc:abc -R \
 	/defaults \
 	/root/Downloads
+chmod a+x /defaults
